@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function marks(){
+        var marks= perseint(document.getElementById('marks').value);
+          if (marks>100){
+          alert ("please enter marks in range of 100")
+          }
+          if (marks >=79 && marks <=100){
+            document.getElementById("grade").innerHTML="grade A"
+          }
+          else if (marks >=60 && marks <=78){
+            document.getElementById("grade").innerHTML="grade B"
+          }
+          else if (marks >=49 && marks <=59){
+            document.getElementById("grade").innerHTML="grade C"
+          }
+          else if (marks >=40 && marks <=48){
+            document.getElementById("grade").innerHTML="grade D"
+          }
+          else if (marks <=39){
+            document.getElementById("grade").innerHTML="grade E"
+          }
+}          
+    </script>
+         
+    
+</head>
+ 
+<body>
+    <div id="main">
+    <div id="head"><h1>Student Grade Generator</h1></div>
+
+    <label>Marks</label><input type="text" id="marks"><br>
+     <div> <h3>Grade</h3></div>
+     <div id="marks">
+        
+     </div>
+
+    <button id="btn"> Enter</button>
+
+<p>Please input your marks on the space provided above.</p>
+    </div>
+    
+</body>
+</html>

@@ -1,52 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <script>
-        function marks(){
-        var marks= perseint(document.getElementById('marks').value);
-          if (marks>100){
-          alert ("please enter marks in range of 100")
-          }
-          if (marks >=79 && marks <=100){
-            document.getElementById("grade").innerHTML="grade A"
-          }
-          else if (marks >=60 && marks <=78){
-            document.getElementById("grade").innerHTML="grade B"
-          }
-          else if (marks >=49 && marks <=59){
-            document.getElementById("grade").innerHTML="grade C"
-          }
-          else if (marks >=40 && marks <=48){
-            document.getElementById("grade").innerHTML="grade D"
-          }
-          else if (marks <=39){
-            document.getElementById("grade").innerHTML="grade E"
-          }
-}          
-    </script>
-         
-    
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+
+
+
 </head>
- 
+
 <body>
-    <div id="main">
-    <div id="head"><h1>Student Grade Generator</h1></div>
-
-    <label>Marks</label><input type="text" id="marks"><br>
-     <div> <h3>Grade</h3></div>
-     <div id="marks">
-        
-     </div>
-
-    <button id="btn"> Enter</button>
-
-<p>Please input your marks on the space provided above.</p>
+  <div class="box">
+    <h1><u>Grade Generator</u></h1>
+    <div class="inputbox">
+      <h2><u>Enter Marks</u></h2>
+      <input type="number" id="marks" >
     </div>
-    
+    <label for="output1">
+      <h2><u>Grade Generated</u></h2>
+    </label>
+    <output>
+      <div class="outputbox">
+        <h2>Marks:<span id="marks"></span>Grade: <span id="grade"></span></h2>
+      </div>
+    </output>
+
+    <div class="inputbox one">
+      <button onclick="genGrade()">Generate</button>
+    </div>
+  </div>
+  <!--speed callenge calculator-->
+  <div class="box">
+    <h1> Speed Detector</h1>
+    <div class="inputbox"> 
+      <input type="number" id="speed">
+    </div>
+    <label for="output1">
+      <h2>Speed generated</h2>
+    </label>
+    <output>
+     <h3>speed: <span id="speed"></span>Demerit : <span id="demerit"></span> </h3>
+    </output>
+    <div class="input box">
+       <button onclick="genPoints()">Generate</button>
+    </div>
+  </div>
+
+    <!--net salary calculator-->
+  <div>
+    <h1>Net Salary Calculator (Toy Problem)</h1>
+    <p>Input basic salary plus benefits</p>
+
+     
+    <input type="number" id="salary">
+     
+    <button id="salarySubmit">Submit</button>
+  
+    <p id="gross"></p>
+    <p id="nssf"></p>
+    <p id="nhif"></p>
+    <p id="paye"></p>
+    <p id="net"></p>
+  </div>
+
 </body>
+<script src="index.js"></script>
+<script>src="speed.js"</script>
+<script src="nsalary.js"></script>
+
 </html>

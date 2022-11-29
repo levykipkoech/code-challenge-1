@@ -32,14 +32,5 @@ To use this repo on your machine requires some simple steps
 
 - (Alternate Option) Open it in any editor of your choice.
 
-### Alternative Two
-
-- On the top right corner of this page there is a button labelled ``Fork``.
-- Click on that button to fork the repo to your own account.
-- Take on the process in ``Alternative One`` above.
-- Remember to replace your username when cloning.
-
-        git clone https://github.com/your-username-here/l1-js-arrays-and-objects.git
-
 ##### description
 This code is for student grade generator, a car speed deector and aNet salary calculator
